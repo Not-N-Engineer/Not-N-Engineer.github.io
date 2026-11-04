@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <div class="binder" id="binder">
+        <div class="card" id="card">
             <h1>
                 Hello, I'm Yujie Jin!
             </h1>
@@ -26,10 +26,15 @@
                 <a href="tel:+19515288388">Phone: +1 (951)528-8388</a>
             </div>
         </div>
+
+        <div class="binder">
+            <h1>About Me</h1>
+            <p>Hello, I am a 16-year-old Junior in at Great Oak High School. </p>
+        </div>
     </body>
 
     <script>
-        const binder = document.getElementById("binder");
+        const card = document.getElementById("card");
 
         document.addEventListener("mousemove", (e) => {
             const centerX = window.innerWidth/2;
@@ -38,8 +43,8 @@
             const tiltX = -(e.clientY - centerY)/window.innerHeight * 25;
             const tiltY = ((e.clientX - centerX)/window.innerWidth * 25);
 
-            binder.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-            binder.style.boxShadow = `${-tiltY}px ${tiltX}px 15px #000000`;
+            card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+            card.style.boxShadow = `${-tiltY}px ${tiltX}px 15px #000000`;
         });
     </script>
 </html>

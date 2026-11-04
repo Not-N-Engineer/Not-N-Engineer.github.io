@@ -16,9 +16,10 @@
     color: var(--ink);
     font-family: var(--cursive);
     font-style: italic;
+    font-size: 25px;
   }
 
-  .binder{
+  .card{
     width: 90vw;
     margin: 5vh auto;
     height: 90vh; 
@@ -31,6 +32,18 @@
     text-align: center;
 
     box-shadow: 0 5px 15px #000000;
+  }
+
+  .binder{
+    width: 100vw;
+    height: 100vh; 
+    background: var(--paper);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   h1{
