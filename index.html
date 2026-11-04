@@ -27,17 +27,13 @@
         const binder = document.getElementById("binder");
 
         document.addEventListener("mousemove", (e) => {
-            const rect = binder.getBoundingClientRect();
-            const centerX = rect.width/2;
-            const centerY = rect.height/2;
+            const centerX = window.innerWidth/2;
+            const centerY = window.innerHeight/2;
 
-            const relMouseX = e.clientX - (window.innerWidth - rect.width)/2;
-            const relMouseY = e.clientY - (window.innerHeight - rect.width)/2
+            const tiltX = (e.clientY - centerY)/window.innerHeight * 25;
+            const tiltY = -((e.clientX - centerX)/window.innerWidth * 25);
 
-            const tiltX = (relMouseY - centerY)/rect.width * 25;
-            const tiltY = -((relMouseX - centerX)/rect.width * 25);
-
-            binder.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+            binder.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
         });
     </script>
 </html>

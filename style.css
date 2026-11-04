@@ -19,7 +19,7 @@
   }
 
   .binder{
-    width: 90%;
+    width: 90vw;
     margin: 5vh auto;
     height: 90vh; 
     background: var(--paper);
