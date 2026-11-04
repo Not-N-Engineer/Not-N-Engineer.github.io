@@ -4,6 +4,7 @@
     --gold: #8a6d1f;
     --dark-gold: #756027;
     --cursive: "Mea Culpa", cursive;
+    --serif: "EB Garamond", serif;
   }
 
   *{ box-sizing:border-box; }
@@ -52,6 +53,12 @@
 
   p{
     margin: 5px 0;
+    font-family: var(--serif);
+  }
+
+  .fancy{
+    margin: 5px 0;
+    font-family: var(--cursive);
   }
 
   a{
