@@ -1,0 +1,27 @@
+:root{
+    --ink: #23241f;
+    --paper: #f0ede2;
+    --gold: #8a6d1f;
+    --cursive: "Allura", cursive, 25px;
+  }
+
+  *{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    height: 100%;
+    background: var(--ink);
+    color: var(--ink);
+    font-family: var(--cursive);
+  }
+
+  .binder{
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100vh; 
+    background: var(--paper);
+  }
+
+  h1{
+    font-size: 35px;
+  }
