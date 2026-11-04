@@ -37,13 +37,30 @@
     font-size: 75px;
   }
 
+  p{
+    margin: 5px 0;
+  }
+
   a{
+    color: var(--ink);
+    font-family: var(--cursive);
+    font-size: 35px;
+    text-decoration: none;
+  }
+
+  a.gold{
     color: var(--dark-gold);
     font-family: var(--cursive);
     font-size: 35px;
     text-decoration: none;
   }
 
-  a:hover{
+  a.gold:hover{
     color: var(--gold);
+  }
+
+  .footer{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
   }
