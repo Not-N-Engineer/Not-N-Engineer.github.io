@@ -34,7 +34,7 @@
             const tiltY = ((e.clientX - centerX)/window.innerWidth * 25);
 
             binder.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-            binder.style.boxShadow = `${tiltY}px ${-tiltX}px 15px #000000`;
+            binder.style.boxShadow = `${-tiltY}px ${tiltX}px 15px #000000`;
         });
     </script>
 </html>
