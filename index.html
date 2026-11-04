@@ -31,8 +31,8 @@
             const centerX = rect.width/2;
             const centerY = rect.height/2;
 
-            const tiltX = -((e.clientX - centerX)/rect.width * 25);
-            const tiltY = (e.clientY - centerY)/rect.width * 25;
+            const tiltX = (e.clientY - centerY)/rect.width * 25;
+            const tiltY = -((e.clientX - centerX)/rect.width * 25);
 
             binder.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
         });
