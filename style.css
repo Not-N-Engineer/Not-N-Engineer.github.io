@@ -60,6 +60,12 @@
   }
 
   .footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 30px;
+
     font-size: 20px;
     display: flex;
     justify-content: space-between;
