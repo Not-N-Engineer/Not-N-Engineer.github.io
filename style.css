@@ -8,23 +8,19 @@
 
   *{ box-sizing:border-box; }
   
-  html, body{
+  html, body{ height: 100%; }
+
+  body{
     margin:0;
-    height: 100%;
     background: var(--ink);
     color: var(--ink);
     font-family: var(--cursive);
-    font-size: 25px;
     font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .binder{
     width: 90%;
-    margin: 0 auto;
-    flex: none;
+    margin: 5vh auto;
     height: 90vh; 
     background: var(--paper);
     display: flex;
