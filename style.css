@@ -52,7 +52,7 @@
     width: 25vw;
     margin: 5vw 10vw;
     height: 15vw; 
-    border-radius: 2vw;
+    border-radius: 0.5vw;
     background: var(--paper-dim);
 
     display: flex;
@@ -61,14 +61,14 @@
     align-items: center;
     text-align: left;
 
-    box-shadow: 0 1vw 4vw #000000;
+    box-shadow: 0 0.5vw 2vw #000000;
 
     transition: transform 0.3s ease-in-out;
   }
 
   .tile h2{
-    margin: 3vw 0;
-    font-size: 5vw;
+    margin: 1vw 0;
+    font-size: 3vw;
   }
 
   .tile p{
@@ -78,7 +78,7 @@
   }
 
   .tile:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 
   h1{
