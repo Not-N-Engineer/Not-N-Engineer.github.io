@@ -50,8 +50,9 @@
 
   .tile{
     width: 25vw;
-    margin: 25px 50px;
+    margin: 5vw 10vw;
     height: 15vw; 
+    border-radius: 2vw;
     background: var(--paper-dim);
 
     display: flex;
@@ -60,7 +61,24 @@
     align-items: center;
     text-align: left;
 
-    box-shadow: 0 3px 10px #000000;
+    box-shadow: 0 1vw 4vw #000000;
+
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .tile h2{
+    margin: 3vw 0;
+    font-size: 5vw;
+  }
+
+  .tile p{
+    margin: 1vw 0;
+    font-family: var(--serif);
+    font-size: 2vw;
+  }
+
+  .tile:hover{
+    transform: scale(1.2);
   }
 
   h1{
@@ -69,7 +87,7 @@
   }
 
   h2{
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
     font-size: 45px;
   }
 
