@@ -42,11 +42,11 @@
                 const centerX = rect.left + rect.width/2;
                 const centerY = rect.top + rect.height/2;
 
-                const tiltX = -(e.clientY - centerY)/(rect.height/2) * 25;
-                const tiltY = ((e.clientX - centerX)/(rect.width/2) * 25);
+                const tiltX = -(e.clientY - centerY)/(rect.height/2) * 15;
+                const tiltY = ((e.clientX - centerX)/(rect.width/2) * 15);
 
                 card.style.transform = `perspective(2000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-                card.style.boxShadow = `${-tiltY/15}px ${tiltX/15}px 1vw #000000`;
+                card.style.boxShadow = `${-tiltY/5}px ${tiltX/5}px 1vw #000000`;
             })
 
             card.addEventListener("mouseleave", () => {
