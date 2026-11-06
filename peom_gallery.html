@@ -145,12 +145,12 @@
                 const tiltX = -(e.clientY - centerY)/(rect.height/2) * 15;
                 const tiltY = ((e.clientX - centerX)/(rect.width/2) * 15);
 
-                card.style.transform = `perspective(2000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+                card.style.transform = `perspective(2000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale(1.1, 1.1, 1.1)`;
                 card.style.boxShadow = `${-tiltY}px ${tiltX}px 8px #000000`;
             })
 
             card.addEventListener("mouseleave", () => {
-                card.style.transform = `perspective(2000px) rotateX(0deg) rotateY(0deg)`;
+                card.style.transform = `perspective(2000px) rotateX(0deg) rotateY(0deg) scale(1, 1, 1)`;
                 card.style.boxShadow = `0 2px 8px #000000`;
             })
         });

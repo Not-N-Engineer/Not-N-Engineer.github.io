@@ -51,7 +51,7 @@
   .tile{
     position: relative;
     width: 500px;
-    margin: 15px 30px;
+    margin: 30px 45px;
     height: 300px; 
     border-radius: 6px;
     background: var(--paper-dim);
@@ -62,12 +62,12 @@
     align-items: center;
     text-align: center;
 
-    box-shadow: 0 2px 8px #000000;
+    box-shadow: 0 2px 8px #0000007c;
   }
 
   .tile h2{
     margin: 5px 0;
-    font-size: 65px;
+    font-size: clamp(12px, 65px, 65px);
     text-decoration: none;
   }
 
@@ -75,10 +75,6 @@
     margin: 5px 0;
     font-family: var(--serif);
     font-size: 20px;
-  }
-
-  .tile:hover{
-    transform: scale(1.1);
   }
 
   h1{
