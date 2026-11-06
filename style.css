@@ -105,6 +105,12 @@
     font-family: var(--serif);
   }
 
+  .binder p{
+    padding: 75px;
+    margin: 5px 0;
+    font-family: var(--serif);
+  }
+
   .end{
     margin-bottom: 45px;
   }
