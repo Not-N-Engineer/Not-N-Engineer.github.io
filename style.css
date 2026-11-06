@@ -50,9 +50,9 @@
 
   .tile{
     position: relative;
-    max-width: 500px;
+    width: 500px;
     margin: 15px 30px;
-    max-height: 300px; 
+    height: 300px; 
     border-radius: 3px;
     background: var(--paper-dim);
 
@@ -67,14 +67,14 @@
 
   .tile h2{
     margin: 5px 0;
-    font-size: 25px;
+    font-size: 40px;
     text-decoration: none;
   }
 
   .tile p{
     margin: 5px 0;
     font-family: var(--serif);
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .tile:hover{
