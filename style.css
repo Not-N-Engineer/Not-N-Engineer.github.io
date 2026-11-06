@@ -48,12 +48,17 @@
   }
 
   h1{
-    margin: 45px 0 15px 0;
+    margin: 95px 0 15px 0;
     font-size: 75px;
   }
 
   p{
     margin: 5px 0;
+    font-family: var(--serif);
+  }
+
+  p.end{
+    margin: 5px 0 75px 0;
     font-family: var(--serif);
   }
 
