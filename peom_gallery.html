@@ -13,14 +13,46 @@
     <body>
         <div class="binder">
             <h2 class="end">
-                I have been writing poems for quite some time, really spiking starting in late 2026. The following is a catalogue of all poems that I could find and document. 
+                I have been writing poems for quite some time, really spiking starting in late 2026. <br>The following is a catalogue of all poems that I could find and document. 
             </h2>
             
             <div class="tile">
-                <a href="poems/Apr-6-2026.html" target="_blank" class="clickable-card"></a>
+                <a href="poems/Apr-6-2026.html" target="_blank" class="clickable-card">
                 <h2>I can cast a spell</h2>
                 <p>April 6, 2026</p>
+                </a>
+            </div>
+
+            <div class="tile">
+                <a href="poems/Jun-1-2026.html" target="_blank" class="clickable-card">
+                <h2>Time and time</h2>
+                <p>June 1, 2026</p>
+                </a>
             </div>
         </div>
     </body>
+
+    <script>
+        const cards = document.querySelectorAll(".tile");
+
+        cards.forEach((card) => {
+            card.addEventListener("mousemove", (e) => {
+                const rect = card.getBoundingClientRect();
+
+                const centerX = rect.left + rect.width/2;
+                const centerY = rect.top + rect.height/2;
+
+                const tiltX = -(e.clientY - centerY)/(rect.height/2) * 25;
+                const tiltY = ((e.clientX - centerX)/(rect.width/2) * 25);
+
+                card.style.transform = `perspective(2000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+                card.style.boxShadow = `${-tiltY/15}px ${tiltX/15}px 1vw #000000`;
+            })
+
+            card.addEventListener("mouseleave", () => {
+                card.style.transform = `perspective(2000px) rotateX(0deg) rotateY(0deg)`;
+                card.style.boxShadow = `0 0.25vw 1vw #000000`;
+            })
+        });
+    </script>
 </html>
