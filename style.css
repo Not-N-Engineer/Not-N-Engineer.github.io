@@ -66,15 +66,24 @@
   }
 
   .tile h2{
+    white-space: nowrap;
     margin: 5px 0;
     font-size: clamp(12px, 65px, 65px);
     text-decoration: none;
   }
 
   .tile p{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
     margin: 5px 0;
     font-family: var(--serif);
     font-size: 20px;
+  }
+
+  .title a{
+    position: absolute;
+    inset: 0;
   }
 
   h1{
@@ -119,11 +128,6 @@
 
   a.gold:hover{
     color: var(--gold);
-  }
-
-  a.clickable-card{
-    position: absolute;
-    inset: 0;
   }
 
   .footer{
