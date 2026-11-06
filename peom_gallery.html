@@ -46,12 +46,12 @@
                 const tiltY = ((e.clientX - centerX)/(rect.width/2) * 15);
 
                 card.style.transform = `perspective(2000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-                card.style.boxShadow = `${-tiltY/5}px ${tiltX/5}px 1vw #000000`;
+                card.style.boxShadow = `${-tiltY/5}px ${tiltX/5}px 4px #000000`;
             })
 
             card.addEventListener("mouseleave", () => {
                 card.style.transform = `perspective(2000px) rotateX(0deg) rotateY(0deg)`;
-                card.style.boxShadow = `0 0.25vw 1vw #000000`;
+                card.style.boxShadow = `0 1px 4px #000000`;
             })
         });
     </script>
