@@ -1,6 +1,7 @@
 :root{
     --ink: #23241f;
     --paper: #f0ede2;
+    --paper-dim: #e5e1d2;
     --gold: #8a6d1f;
     --dark-gold: #756027;
     --cursive: "Mea Culpa", cursive;
@@ -47,9 +48,29 @@
     text-align: center;
   }
 
+  .tile{
+    width: 25vw;
+    margin: 25px 50px;
+    height: 15vw; 
+    background: var(--paper-dim);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    box-shadow: 0 3px 10px #000000;
+  }
+
   h1{
     margin: 95px 0 15px 0;
     font-size: 75px;
+  }
+
+  h2{
+    margin: 15px 0 15px 0;
+    font-size: 45px;
   }
 
   p{
@@ -57,9 +78,8 @@
     font-family: var(--serif);
   }
 
-  p.end{
-    margin: 5px 0 75px 0;
-    font-family: var(--serif);
+  .end{
+    margin-bottom: 75px;
   }
 
   .fancy{
@@ -83,6 +103,11 @@
 
   a.gold:hover{
     color: var(--gold);
+  }
+
+  a.clickable-card{
+    position: absolute;
+    inset: 0;
   }
 
   .footer{
