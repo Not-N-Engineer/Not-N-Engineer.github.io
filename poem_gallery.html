@@ -162,9 +162,13 @@
             fontSize = 65;
             title.style.fontSize = `${fontSize}px`;
 
-            while(title.scrollWidth > availableWidth) {
+            while(title.scrollWidth > availableWidth && fontSize > 45) {
                 fontSize--;
                 title.style.fontSize = `${fontSize}px`;
+            }
+
+            if(title.scrollWidth > availableWidth) {
+                title.style.whiteSpace = `normal`;
             }
         });
     </script>
