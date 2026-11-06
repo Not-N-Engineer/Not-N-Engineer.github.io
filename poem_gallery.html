@@ -154,5 +154,18 @@
                 card.style.boxShadow = `0 2px 8px #0000007c`;
             })
         });
+
+        document.querySelectorAll(".tile h2").forEach((title) => {
+            const card = title.closest(".tile");
+            const availableWidth = card.clientWidth - 20;
+
+            fontSize = 65;
+            title.style.fontSize = `${fontSize}px`;
+
+            while(title.scrollWidth > availableWidth) {
+                fontSize--;
+                title.style.fontSize = `${fontSize}px`;
+            }
+        });
     </script>
 </html>
