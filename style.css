@@ -37,8 +37,7 @@
   }
 
   .binder{
-    width: 90vw;
-    min-width: 1000px;
+    width: 100vw;
     min-height: 100vh; 
     background: var(--paper);
 
